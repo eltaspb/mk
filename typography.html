@@ -11,6 +11,17 @@
         <link rel="icon" type="image/png" sizes="32x32" href="imgs/support/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="imgs/support/favicon-16x16.png">
         <link rel="manifest" href="imgs/support/site.webmanifest">
+        <style>
+		.scale__container--js {
+            text-align: center;
+        }
+        .scale--js {
+            display: inline-block;
+            transform-origin: 50% 0;
+            -webkit-font-smoothing: antialiased;
+            transform: translate3d( 0, 0, 0);
+        }
+        </style>
 	</head>
 	<body class="is-preload">
     
@@ -54,12 +65,22 @@
                                         </div>
 						    </div>
 							<div class="row">
-                                        <div class="col-10 col-12-small">
+                                        <div class="col-12 col-12-small">
                                         
                                              <h2 class="bold">Typography</h2>
                                         
                                         </div>
-                                        <hr>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                        <div class="col-12 col-12-small">
+                                        
+                                             
+                                             <div class="scale__container--js">
+                                             <h1 class="scale--js medium">MK NRA</h1>
+                                             </div>
+                                        
+                                        </div>
                             </div>
                             <hr class="line">
                             <div class="row">
@@ -266,6 +287,45 @@ We understand that many businesses need help in the digital world but don't have
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
             <script src="assets/js/demo.js"></script>
+            <script>
+			function scaleHeader() {
+  var scalable = document.querySelectorAll('.scale--js');
+  var margin = 10;
+  for (var i = 0; i < scalable.length; i++) {
+    var scalableContainer = scalable[i].parentNode;
+    scalable[i].style.transform = 'scale(1)';
+    var scalableContainerWidth = scalableContainer.offsetWidth - margin;
+    var scalableWidth = scalable[i].offsetWidth;
+    scalable[i].style.transform = 'scale(' + scalableContainerWidth / scalableWidth + ')';
+    scalableContainer.style.height = scalable[i].getBoundingClientRect().height + 'px';
+  }
+} 
+
+
+
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
+
+var myScaleFunction = debounce(function() {
+	scaleHeader();
+}, 250);
+
+myScaleFunction();
+
+window.addEventListener('resize', myScaleFunction);
+</script>
 
 	</body>
 </html>

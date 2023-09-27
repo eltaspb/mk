@@ -44,8 +44,8 @@
         }
 		
 @font-face {
-           font-family: MKSans WEB Light;
-           src: url(../webfonts/MKSans_WEB-Light.woff) format('woff');
+           font-family: NewRailAlphabet Black WEB;
+           src: url(../webfonts/NewRailAlphabet-Black_WEB.woff) format('woff');
            font-display: swap;
            font-style: normal;
         }
@@ -273,6 +273,11 @@ input, select, textarea {
 		
 		.bold {
 			font-family: 'NewRailAlphabet Bold WEB', Helvetica, sans-serif;
+		    font-weight: normal;
+		}
+		
+		.black {
+			font-family: 'NewRailAlphabet Black WEB', Helvetica, sans-serif;
 		    font-weight: normal;
 		}
 

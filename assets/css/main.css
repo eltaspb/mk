@@ -7,6 +7,14 @@
         }
 		
 @font-face {
+           font-family: MK Sans Medium;
+           src: url(../webfonts/MKSans-Medium.woff2) format('woff2');
+		   src: url(../webfonts/MKSans-Medium.ttf) format('truetype');
+           font-display: swap;
+           font-style: normal;
+        }
+		
+@font-face {
            font-family: MK Sans Bold;
            src: url(../webfonts/MKSans-Bold.woff2) format('woff2');
 		   src: url(../webfonts/MKSans-Bold.ttf) format('truetype');

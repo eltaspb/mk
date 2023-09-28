@@ -293,7 +293,7 @@ input, select, textarea {
 	
 	h2.special {
 		font-size: 3rem;
-		line-height: 1.3;
+		line-height: 1.1;
 	}
 
 	h3 {
@@ -471,8 +471,8 @@ input, select, textarea {
 		}
 		
 		h2.special {
-		   
-		   font-size: 2rem;
+		    font-size: 2rem;
+			line-height: 1;
 	    }
 
 		h3 {

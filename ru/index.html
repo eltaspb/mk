@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html data-n-head-ssr lang="ru">
+<html data-n-head-ssr lang="ru-RU">
 	<head>
 		<title>Stanislaw Wolodin</title>
 		<meta charset="utf-8" />
@@ -11,6 +11,12 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../imgs/support/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../imgs/support/favicon-16x16.png">
         <link rel="manifest" href="../imgs/support/site.webmanifest">
+        <style type="text/css">
+		.logo_ch {
+			position: fixed;
+			z-index: 1;
+		}
+		</style>
 	</head>
 	<body class="is-preload">
     
@@ -25,9 +31,7 @@
                             <div class="row" style="margin-bottom:5rem;">
 										<div id="topmenu" class="col-3 col-6-small">
                                         
-                                             <ul>
-                                                <li>Stanislaw Wolodin</li>
-                                             </ul>
+                                             <span class="logo_ch">Stanislaw Wolodin</span>
                                         
                                         </div>
                                         <div id="topmenu" class="col-3 col-6-small">
@@ -76,6 +80,23 @@
                                         
                                         </div>
                             </div>
+                            
+                            <div class="row">
+                                        <div class="col-5 col-12-small">
+                                        
+                                             <span class="image fit"><img src="../images/work/elta/elta_symbol_safe.jpg" onContextMenu="return false;" alt="SW" /></span>
+                                        
+                                        </div>
+                                        <div class="col-7 off-12-small">
+                                        </div>
+                            </div>
+                            <div class="row">
+                                        <div class="col-12 col-12-small">
+                                        
+                                             <span class="image fit"><video data-src="../images/work/elta/elta_desktop_screen_index.mp4" data-mobsrc="../images/work/elta/elta_desktop_screen_index.mp4" placeholder="" autoplay loop muted="" playsinline="" style="background-image: url('imgs');" src="../images/work/elta/elta_desktop_screen_index.mp4"></video></span>
+                                        
+                                        </div>
+                            </div>
                             <div class="row">
                                         <div class="col-12 col-12-small">
                                         
@@ -119,6 +140,11 @@
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
             <script src="../assets/js/demo.js"></script>
+            <script type="text/livescript">
+			$(window).scroll(function() {
+              $('.logo_ch').html($(this).scrollTop() > 100 ? 'SW':'Stanislaw Wolodin');
+            }).scroll();
+            </script>
 
 	</body>
 </html>

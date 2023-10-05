@@ -1,8 +1,7 @@
 
 @font-face {
-           font-family: KHTeka Regular;
-           src: url(../webfonts/KHTeka-Regular.woff) format('woff');
-		   src: url(../webfonts/KHTeka-Regular.woff2) format('woff2');
+           font-family: BS Regular;
+           src: url(../webfonts/BS-Regular.woff2) format('woff2');
            font-display: swap;
            font-style: normal;
         }
@@ -170,7 +169,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #000;
-		font-family: 'KHTeka Regular', Helvetica, sans-serif;
+		font-family: 'BS Regular', Helvetica, sans-serif;
 		font-weight: normal;
 		letter-spacing: 0;
 		line-height: 1.3;
@@ -192,7 +191,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		 font-family: 'KHTeka Regular', Helvetica, sans-serif;
+		 font-family: 'BS Medium', Helvetica, sans-serif;
 		 font-weight: normal;
 	}
 
@@ -224,7 +223,7 @@ input, select, textarea {
 		}
 		
 		.medium {
-			font-family: 'NewRailAlphabet Medium WEB', Helvetica, sans-serif;
+			font-family: 'BS Medium', Helvetica, sans-serif;
 		    font-weight: normal;
 		}
 		
